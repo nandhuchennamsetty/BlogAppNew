@@ -17,7 +17,7 @@ app.use(express.json());
 app.use('/', Router);
 
 // Start the server
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => console.log(`Server is running at ${PORT}`));
 
 // Database connection
