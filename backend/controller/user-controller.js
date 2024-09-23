@@ -1,5 +1,6 @@
 // controller/user-controller.js
-import bcrypt from "bcrypt";
+// import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import User from "../model/userdata.js";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
