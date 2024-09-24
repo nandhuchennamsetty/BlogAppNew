@@ -1,7 +1,7 @@
 import grid from "gridfs-stream";
 import mongoose from "mongoose";
 // hello
-const url = "";
+const API_URL = "https://blogappnewbackend.onrender.com";
 
 let gfs, gridfsBucket;
 const conn = mongoose.connection;
@@ -32,7 +32,7 @@ export const uploadImage = (request, response) => {
     return response.status(404).json({ msg: "File not found" });
   }
 
-  const imageUrl = `${url}/file/${request.file.filename}`;
+  const imageUrl = `${API_URL}/file/${request.file.filename}`;
   return response.status(200).json(imageUrl);
 };
 
