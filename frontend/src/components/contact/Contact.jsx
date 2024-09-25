@@ -24,7 +24,7 @@ const Text = styled(Typography)`
 const Contact = () => {
   return (
     <Box>
-      <Banner />
+      <Banner></Banner>
       <Wrapper>
         <Typography variant="h3">Getting in touch is easy!</Typography>
         <Text variant="h5">
